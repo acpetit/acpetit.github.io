@@ -29,7 +29,7 @@
 					<!-- Me -->
 		  <section id="Me">
 			  <header class="major">
-				  <h3>About me</h3>
+				  <h2>About me</h2>
 			  </header>
 			  <p>
 I am a postdoctoral researcher at the Department of Astronomy and Theoretical Physics at Lund University.
@@ -45,12 +45,10 @@ and <a href="https://www.imcce.fr/annuaire/gwenael-boue">Gwenaël Boué</a>.
 I mainly worked on the development of simple criteria to determine the stability of exoplanetary systems.
 
 	  <ul class="actions">
-		<a href="documents/CV_Antoine_Petit_2019.pdf" class="button"> Full CV (pdf)</a>
+		<a href="documents/CV_Antoine_Petit_2021.pdf" class="button"> Full CV (pdf)</a>
 	<a
-	href="https://ui.adsabs.harvard.edu/search/filter_author_facet_hier_fq_author=OR&filter_author_facet_hier_fq_author=author_facet_hier%3A%221%2FPetit%2C%20A%2FPetit%2C%20Antoine%20C%22&filter_author_facet_hier_fq_author=author_facet_hier%3A%221%2FPetit%2C%20A%2FPetit%2C%20A%20%20C%22&filter_doctype_facet_hier_fq_doctype=AND&filter_doctype_facet_hier_fq_doctype=doctype_facet_hier%3A%220%2FArticle%22&fq=%7B!type%3Daqp%20v%3D%24fq_author%7D&fq=%7B!type%3Daqp%20v%3D%24fq_doctype%7D&fq_author=(author_facet_hier%3A%221%2FPetit%2C%20A%2FPetit%2C%20Antoine%20C%22%20OR%20author_facet_hier%3A%221%2FPetit%2C%20A%2FPetit%2C%20A%20%20C%22)&fq_doctype=(doctype_facet_hier%3A%220%2FArticle%22)&p_=0&q=author%3A%22Petit%2C%20Antoine%20C.%22&sort=date%20desc%2C%20bibcode%20desc"
+	href="https://ui.adsabs.harvard.edu/search/p_=0&q=orcid%3A0000-0003-1970-1790&sort=date%20desc%2C%20bibcode%20desc"
 	class="button">Publications (via ADS)</a>
-				
-   
 			  </ul>  
    
 	</p>
@@ -62,8 +60,7 @@ I mainly worked on the development of simple criteria to determine the stability
 	  <!-- Research -->
 		  <section id="Interests">
 			  <header class="major">
-				  <h3>Research Interests</h3>
-			  </header>
+				  <h2>Research Interests</h2>
 			  <p>
 					<li> Celestial and planet dynamics </li>
 					<li> Stability of planetary systems </li>
@@ -71,40 +68,77 @@ I mainly worked on the development of simple criteria to determine the stability
 					<li> Statistics and architecture of planetary systems </li>
 					<li> Numerical integration methods </li>
 	</p>
+</header>
 <!--	  <ul class="actions">
 				  <a
 		  href="#Research"
 		  class="button">Click to learn more</a>
-		<!--  <li><a href="#" class="button">Learn
+		<!--  <li><a href="#" class="button">Learn 
 		  More</a></li> -->
-			  </ul>  
 			  </section>
 
+			  <header class="major">
+				<h2>Selected works</h2>
+
+			  <section id="instability-compact">
+				<header class="major">
+				  <h3> The path to instability in compact multiplanetary systems </h3>
+				  <p>
+					<span class="image left"><img src="documents/compactmulti/diffusion_pheno_90.png"  /></span> 
+					Three or more compact planetary systems can become unstable on timescales of up to billions of years. 
+					Predicting their stability is challenging and numerically expensive due to the chaotic dynamics, and, until now, there has been no theoretical understanding of the nature of the mechanism driving the instability. 
+					Based on numerical simulations, it had been postulated that the system's survival time follows an exponential trend in the planet orbital separation measured in units of Hill radii. 
+					Contrary to a constant diffusion process, planetary systems seem to remain dynamically quiescent for most of their lifetimes prior to a very short unstable phase. 
+					In this work, I studied a two-phase mechanism in which the slow chaotic diffusion due to the overlap of three-body resonances dominates the instability timescale prior to a rapid scattering phase triggered by the crossing of a two-planet mean motion resonance. 
+					I obtained an analytical estimate of the survival time that is consistent with numerical simulations over four orders of magnitude for the planet-to-star mass ratio, and six to eight orders of magnitude for the instability time. 
+
+					<span class="image left"><img src="documents/compactmulti/highlight.png" /></span>
+					I also confirmed that measuring the orbital spacing in terms of Hill radii is not suitable and that the correct spacing unit scales have a flatter dependency in the planet mass.
+					My model reproduces the observation that the survival time increases beyond a certain spacing since the three-planet resonances do not overlap. 
+				  </p>
+
+				<p>
+					A Python module that give the instability time scale can be found on <a href="https://github.com/acpetit/PlanetSysSurvivalTime">GitHub</a>.
+				</p>
+				  <p>
+					<li><a href="https://ui.adsabs.harvard.edu/abs/2017A%26A...605A..72L/abstract">
+						The path to instability in compact multiplanetary systems</a>,  A. C. Petit, G. Pichierri, M. D. Davies & A. Johansen A&A 2020 </li>
+				  </p>
+				  <p>
+
+					</p>
+				</section>
+				</header>
 
 			  <section id="AMD-stability">
 					<header class="major">
 					  <h3> AMD-stability and the classification of planetary systems </h3>
 					  <p>
+						<span class="image left"><img src="documents/AMD-stab/alphaepsall_thesis.jpg"  /></span> 
+						
 						The AMD or Angular Momentum Deficit (AMD) is a quantity that measures the dynamical excitment of a planetary system.
 						A large AMD means that planet orbit may cross, leading to the destruction of the planetary system. 
 						I used it to classify the exoplanetary systems into two categories: the AMD-stable ones that will remain 
 						stable over their lifetime because their AMD is too low to allow for collision and the AMD-unstable were 
 						the AMD alone cannot ensure the stability of the system and that should be studied in more details.
+						
 					  </p>
-					  <p>
+					  <p><span class="image left"><img src="documents/AMD-stab/hillamdstab.png" /></span>
 						  An AMD-stability calculator is available on <a href="http://exoplanet.eu/amd_stability/">exoplanet.eu</a> for selected systems.
 						  My works with J. Laskar and G. Boué on the AMD-stability are published in the articles:
 						<li><a href="https://ui.adsabs.harvard.edu/abs/2017A%26A...605A..72L/abstract">
-							AMD-stability and the classification of planetary systems</a>, J. Laskar & A. Petit, A&A 2017 </li>
+							AMD-stability and the classification of planetary systems</a>, J. Laskar & A. C. Petit, A&A 2017 </li>
 						<li><a href="https://ui.adsabs.harvard.edu/abs/2017A%26A...607A..35P/abstract">
-								AMD-stability in the presence of first-order mean motion resonances </a>, A. Petit, L. Laskar & G. Boué, A&A 2017 </li>
+								AMD-stability in the presence of first-order mean motion resonances </a>, A. C. Petit, L. Laskar & G. Boué, A&A 2017 </li>
 						<li><a href="https://ui.adsabs.harvard.edu/abs/2018A%26A...617A..93P/abstract">
-							Hill stability in the AMD framework  </a>, A. Petit, L. Laskar & G. Boué, A&A 2018 </li>
+							Hill stability in the AMD framework  </a>, A. C. Petit, L. Laskar & G. Boué, A&A 2018 </li>
 					  </p>
-					  <span class="image left"><img src="documents/AMD-stab/alphaepsall_thesis.png"  /></span> 
-					<span class="image right"><img src="documents/AMD-stab/amdhill_fig4.png" /></span>
+					  <p>
 
-
+					  </p>
+				</section>
+			</header>
+			</header>
 			<div id="main">
 
 
